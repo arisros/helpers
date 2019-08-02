@@ -1,4 +1,8 @@
-function consistentArray(a) {
+function mergeArray(e, a) {
+  return e.concat(...a)
+}
+
+export default (a) => {
   let b = [] // save the keys from array
   let c = [] // return data array
   a.forEach(e => b = mergeArray(b, Object.keys(e)))
@@ -9,8 +13,3 @@ function consistentArray(a) {
   })
   return c
 }
-
-function mergeArray(e, a) {
-  return e.concat(...a)
-}
-
